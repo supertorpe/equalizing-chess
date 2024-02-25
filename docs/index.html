@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,15 @@
     <link rel="preload" href="/equalizing-chess/assets/fonts/RussoOne-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <meta name="theme-color" content="#ffffff">
     <script src="coi-serviceworker.js"></script>
+    <script>
+        window.coi = {
+            shouldDeregister: () => false,
+            coepCredentialless: () => false,
+            coepDegrade: () => true,
+            doReload: () => window.location.reload(),
+            quiet: false
+        }
+    </script>
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
@@ -33,10 +43,12 @@
   <link rel="modulepreload" crossorigin href="/equalizing-chess/assets/vendor-D-c0f6XP.js">
   <link rel="stylesheet" crossorigin href="/equalizing-chess/assets/index-D40oqfIn.css">
 <link rel="manifest" href="/equalizing-chess/manifest.json"><script id="vite-plugin-pwa:register-sw" src="/equalizing-chess/registerSW.js"></script></head>
+
 <body class="dark">
     <div class="loader-container">
         <div class="loader"></div>
     </div>
     <ion-app></ion-app>
 </body>
+
 </html>
