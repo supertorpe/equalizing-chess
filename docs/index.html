@@ -16,6 +16,7 @@
     <script src="coi-serviceworker.min.js"></script>
     <script>
         window.coi = {
+            shouldRegister: () => !reloadedBySelf,
             shouldDeregister: () => false,
             coepCredentialless: () => false,
             coepDegrade: () => true,
