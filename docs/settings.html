@@ -74,6 +74,10 @@
     <ion-item>
       <ion-range id="stockfishMultiPVRange" label-placement="start" x-bind:aria-label="$t('settings.stockfish-multipv')" x-bind:label="$t('settings.stockfish-multipv') + ' (' + currentStockfishMultiPV +  ')'" min="1" max="20" color="medium" pin="true"></ion-range>
     </ion-item>
+    <ion-item>
+      <ion-input id="inputSelectionUrl" placeholder="Selection Function URL" x-bind:value="currentSelectionUrl"></ion-input>
+      <ion-button x-on:click="changeSelectionUrl()" expand="block" color="medium">Aceptar</ion-button>
+    </ion-item>
   </ion-list>
 </ion-content>
 <ion-footer>
