@@ -14,7 +14,7 @@ export function selectCandidate(candidates) {
 ```
 "candidates" is an array containing the moves provided by stockfish, i.e.: [{"score":-27,"pv":"e7e6"},{"score":-30,"pv":"g8f6"},{"score":-27,"pv":"e7e6"}...]
 
-There area already these functions available:
+There are already these functions available:
 
 - Original "equalizing" function: https://gist.githubusercontent.com/supertorpe/c18a5f320db997e52f25aecac5f9ceb1/raw/54f4acb908dce74b94641d4d1f1ed3a035452375/equalizing-chess-selection.js
 
