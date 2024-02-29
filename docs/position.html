@@ -16,14 +16,22 @@
             <div class="board_wrapper">
                 <div x-bind:class="[boardTheme, pieceTheme]">
                     <div id="__chessboard__"></div>
-                    <div class="gauge"><div class="gauge_top"></div><div class="gauge_bottom"></div></div>
+                    <div class="gauge">
+                        <div class="gauge_top"></div>
+                        <div class="gauge_bottom"></div>
+                    </div>
                 </div>
             </div>
             <div class="info_wrapper">
                 <div class="info">
-                    <ion-item class="ion-text-center">
-                        <ion-label text="bla, bla, bla..."></ion-label>
-                    </ion-item>
+                    <template x-for="(moves, idx) in parsedPgn.value">
+                        <span>
+                            <ion-label class="text-figurine" x-text="(idx+1) + '. '"></ion-label>
+                            <template x-for="move in moves">
+                                <ion-label class="text-figurine" x-text="move + ' '"></ion-label>
+                            </template>
+                        </span>
+                    </template>
                 </div>
                 <div class="action_buttons">
                     <!--
