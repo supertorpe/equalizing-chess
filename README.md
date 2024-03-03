@@ -25,3 +25,7 @@ There are already these functions available:
 The webapp dynamically loads the function from the URL and uses it to choose the movement of the engine.
 
 You can write your own function and set its URL in the settings screen.
+
+## Initial position
+
+It's possible to set an initial FEN:  [https://supertorpe.github.io/equalizing-chess/#/equalizing-chess/fen/7k/7p/8/8/8/8/P7/K7 w - - 0 1](https://supertorpe.github.io/equalizing-chess/#/equalizing-chess/fen/7k/7p/8/8/8/8/P7/K7%20w%20-%20-%200%201)
