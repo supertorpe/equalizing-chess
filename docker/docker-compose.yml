@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  equalizing-chess:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    image: equalizing-chess:0.0.1
+    container_name: equalizing-chess
+    user: ${MY_UID}:${MY_GID}
+    environment:
+      - SCRIPT=${SCRIPT}
+    ports:
+      - "5173:5173"
+      - "4173:4173"
+    volumes:
+      - ../code:/app
+    working_dir: /app

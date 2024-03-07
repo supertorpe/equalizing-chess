@@ -1,0 +1,42 @@
+<span x-data="info">
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title x-text="$t('home.title')"></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle color="medium" x-text="$t('home.get-started')"></ion-card-subtitle>
+      <ion-card-title color="dark" x-text="$t('home.presentation')"></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p x-text="$t('home.description')"></p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle color="dark" x-text="$t('home.start-game')"></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-button color="light" size="default" expand="full" href="game/white" data-navigo>
+              <img slot="start" x-bind:src="iconWhite" class="big-thumbnail aura" x-bind:alt="$t('home.get-started')" />
+            </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button color="light" size="default" expand="full" href="game/black" data-navigo>
+              <img slot="start" x-bind:src="iconBlack" class="big-thumbnail aura" x-bind:alt="$t('home.get-started')" />
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+</span>

@@ -1,8 +1,6 @@
 # equalizing-chess
 Equalizing chess allows you to play against stockfish in such a way that it does not try to beat you with all its strength, but rather balance the game with each move to try to keep the evaluation as balanced as possible.
 
-NOTE: this project is in early development state. The code will be published in march (2024)
-
 ## Selection funtion
 
 The webapp uses a selection function to choose the move among the candidates provided by stockfish.
@@ -31,3 +29,26 @@ You can write your own function and set its URL in the settings screen.
 ## Initial position
 
 It's possible to set an initial FEN:  [https://supertorpe.github.io/equalizing-chess/#/equalizing-chess/fen/7k/7p/8/8/8/8/P7/K7 w - - 0 1](https://supertorpe.github.io/equalizing-chess/#/equalizing-chess/fen/7k/7p/8/8/8/8/P7/K7%20w%20-%20-%200%201)
+
+## Acknowledgments
+
+Following software and resources has been used:
+
+* [chess.js](https://github.com/jhlywa/chess.js): A Javascript chess library for chess move generation/validation, piece placement/movement, and check/checkmate/draw detection
+* [chessground](https://github.com/lichess-org/chessground): A Javascript chess board
+* [stockfish.js](https://github.com/nmrugg/stockfish.js) WASM implementation of Stockfish chess engine by Nathan Rugg (nmrugg)
+* [TypeScript](https://www.typescriptlang.org): JavaScript with syntax for types
+* [Ionic Framework](https://ionicframework.com): the mobile sdk for the web
+* [Alpine.js](https://alpinejs.dev): lightweight JavaScript framework
+* [Alpine i18n](https://github.com/rehhouari/alpinejs-i18n): Internationalization (i18n) support for Alpine.js
+* [Navigo](https://github.com/krasimir/navigo): a simple vanilla JavaScript router
+* [howler.js](https://github.com/goldfire/howler.js): javascript audio library for the modern web
+* [enable-threads](https://github.com/josephrocca/clip-image-sorter/blob/main/enable-threads.js): creates a service worker that cross-origin-isolates the page
+* [Vite](https://vitejs.dev): fast build tool
+* [Logo](https://www.iconfinder.com/icons/1688870/business_chess_strategy_icon): designed by Inipagi from Iconfinder
+* Chess pieces sets:  alpha (Eric Bentzen), [california (Jerry S)](https://sites.google.com/view/jerrychess/home), [cburnett (Colin M.L. Burnett)](https://commons.wikimedia.org/wiki/Category:SVG_chess_pieces#/media/File:Chess_Pieces_Sprite.svg), [chess7 (Alexander Sizenko)](http://www.styleseven.com/php/get_product.php?product=Chess-7%20font), [chessnut (Alexis Luengas)](https://github.com/LexLuengas/chessnut-pieces), [chicago (Benjamin Friedrich)](https://github.com/benjfriedrich/chess-foundry-pack), companion (David L. Brown), [fantasy (Maurizio Monge)](https://commons.wikimedia.org/wiki/Category:SVG_chess_pieces/Maurizio_Monge), [iowa (Benjamin Friedrich)](https://github.com/benjfriedrich/chess-foundry-pack), [kosal (philatype)](https://github.com/philatype/kosal), leipzig (Armando Hernández Marroquin), letter (???), merida (Armando Hernández Marroquin), mono (???), [oslo (Benjamin Friedrich)](https://github.com/benjfriedrich/chess-foundry-pack), [pirouetti](https://lichess.org/@/pirouetti), [pixel (therealqtpi)](https://twitter.com/therealqtpi), [reilly (Reilly Craig)](http://reillycraig.ca), riohacha (???), [shapes (Jimmie Elvenmark)](https://github.com/flugsio/chess_shapes), [spatial (Maurizio Monge)](https://commons.wikimedia.org/wiki/Category:SVG_chess_pieces/Maurizio_Monge), [symmetric (Arcticpenguins)](https://www.dropbox.com/sh/jws5b0hgf71udsf/AAAZCxF4PQ02nkhwPZN3qHxia?dl=0)
+* [Russo One](https://fonts.google.com/specimen/Russo+One): text font by Jovanny Lemonad
+* [Move sound](https://github.com/lichess-org/lila/blob/master/public/sound/standard/Move.mp3): from lichess static resources
+* [Capture sound](https://github.com/lichess-org/lila/blob/master/public/sound/standard/Capture.mp3): from lichess static resources
+* [Success sound](https://freesound.org/people/shinephoenixstormcrow/sounds/337049/): shinephoenixstormcrow from freesound.org
+* [Fail sound](https://freesound.org/people/Bertrof/sounds/131657/): Bertrof from freesound.org
