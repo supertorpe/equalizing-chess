@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://supertorpe.github.io/equalizing-chess/sitemap.xml
