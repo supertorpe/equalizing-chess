@@ -13,7 +13,7 @@ export function selectCandidate(candidates) {
 "candidates" is an array containing the moves provided by stockfish, i.e.: [{"type":"cp","score":689,"pv":"h7h5"},{"type":"cp","score":-703,"pv":"h8g7"},
 {"type":"mate","score":14,"pv":"a2d2"},{"type":"mate","score":16,"pv":"a2a4"},...]
 
-When type=cp, the highest the score is, the strong is the movement. When type=mate, the score is the distance to mate.
+When type=cp, the high the score is, the strong is the movement. When type=mate, the score is the distance to mate.
 
 There are already these functions available:
 
